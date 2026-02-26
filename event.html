@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - RNHS-SHS Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Smooth transition for logout */
+        body { transition: opacity 0.5s ease; }
+        .fade-out { opacity: 0; }
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .event-poster {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #eee;
+        }
+        .event-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-top: 5px solid #ff69b4; /* Pink accent for the Feb-Ibig theme */
+            text-align: left;
+        }
+        .date-badge {
+            display: inline-block;
+            background: #800000; /* Replaced var with solid maroon for stability */
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        /* Style for clickable name in footer */
+        .footer-link {
+            color: inherit;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer-link:hover {
+            color: #800000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mainWebsite">
+        <header>
+            <h1 style="letter-spacing: 2px;">ROSALES NATIONAL HIGH SCHOOL</h1>
+            <p>"Quality Education for a Brighter Future"</p>
+        </header>
+
+        <nav>
+            <a href="homee.html"><i class="fas fa-home"></i> Home</a>
+            <a href="mission-vision.html"><i class="fas fa-eye"></i> Mission & Vision</a>
+            <a href="strand.html"><i class="fas fa-graduation-cap"></i> Strands</a>
+            <a href="event.html"><i class="fas fa-calendar-alt"></i> Events</a>
+            
+            <a href="contacts.html"><i class="fas fa-address-book"></i> Contacts</a>
+            
+            <a href="#" onclick="handleLogout(event)" style="color: #800000; font-weight: bold; border-left: 1px solid #eee;">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </nav>
+
+        <div class="content-view" style="display: block;">
+            <h2 style="font-size: 2.5rem;">SCHOOL EVENTS</h2>
+            <p style="color: #666; margin-bottom: 40px;">Stay updated with the latest activities from the RNHS Supreme Secondary Learner Government.</p>
+            
+            <div class="event-grid">
+                <div class="event-card">
+                    <span class="date-badge">Feb 12 & 13, 2026</span>
+                    <img src="event1.jpg" alt="Feb-Ibig Special" class="event-poster">
+                    <h4 style="color: #5a0000; margin: 10px 0;">Feb-Ibig Special</h4>
+                    <p style="font-size: 0.9rem; color: #555;">
+                        Celebrate the month of love with RNHS! The Supreme Secondary Learner Government presents a special two-day celebration for all learners.
+                    </p>
+                </div>
+
+                <div class="event-card">
+                    <span class="date-badge">Feb 12 & 13, 2026</span>
+                    <img src="event2.jpg" alt="Feb-Ibig Photo Booth" class="event-poster">
+                    <h4 style="color: #5a0000; margin: 10px 0;">Feb-Ibig Photo Booth</h4>
+                    <p style="font-size: 0.9rem; color: #555;">
+                        Capture the moment! Visit our Feb-Ibig Photo Booth for only <b>20 PHP per photo strip</b>. Choose from various heart-themed layouts and frames.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+        <p style="font-weight: bold; font-size: 1.1rem;">Rosales National High School</p>
+        <p>© 2026 All Rights Reserved | Developed By: 
+            <a href="webdevprof.html" style="color: inherit; text-decoration: none; font-weight: bold;">Mary Reysie Lhan A. Aquino</a>
+        </p>
+    </footer>
+    </div>
+
+    <script>
+        // FUNCTIONAL LOGOUT SCRIPT
+        function handleLogout(event) {
+            event.preventDefault(); 
+            if(confirm("Are you sure you want to logout?")) {
+                document.body.classList.add('fade-out');
+                setTimeout(() => {
+                    window.location.href = 'index.html'; 
+                }, 500);
+            }
+        }
+    </script>
+
+</body>
+</html>

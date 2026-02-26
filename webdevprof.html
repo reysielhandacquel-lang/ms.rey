@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile - Mary Reysie Lhan A. Aquino</title>
+    <style>
+        :root {
+            --maroon: #800000;
+            --light-bg: #fdfcf0;
+            --white: #ffffff;
+            --text-gray: #333;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            background-color: var(--white);
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            border-bottom: 10px solid var(--maroon);
+            border-left: 10px solid var(--maroon);
+        }
+
+        .profile-header {
+            background-color: var(--maroon);
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .header-info h2 {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #ffcc00;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 150px;
+            border: 3px solid white;
+            border-radius: 8px;
+            object-fit: cover;
+            background-color: #555;
+        }
+
+        .content-padding {
+            padding: 40px;
+        }
+
+        h3 {
+            color: var(--maroon);
+            border-bottom: 2px solid var(--maroon);
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        p, li {
+            font-size: 14px;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th {
+            background-color: var(--maroon);
+            color: white;
+            text-align: left;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 13px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .home-btn {
+            background-color: var(--maroon);
+            color: white;
+            padding: 10px 35px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.3s;
+            display: inline-block;
+        }
+
+        .home-btn:hover {
+            background-color: #a00000;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <header class="profile-header">
+        <div class="header-info">
+            <h1>Mary Reysie Lhan A. Aquino</h1>
+            <h2>Senior High School Student / Developer</h2>
+            <div class="contact-info">
+                Zone 1, Rosales Pangasinan<br>
+                Contact: 09457525429<br>
+                Email: maryreysielhan@gmail.com
+            </div>
+        </div>
+        <img src="ms.rey.jpg" alt="Profile Picture" class="profile-pic">
+    </header>
+
+    <div class="content-padding">
+        <section>
+            <h3>Objective</h3>
+            <p>To commit a job where I can utilize my field of study, learn new skills, expand my knowledge, and grow intellectually, morally, and emotionally in a new work environment.</p>
+        </section>
+
+        <section>
+            <h3>Personal Background</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40%;">Detail</th>
+                        <th>Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Date of Birth</td><td>May 04, 2008</td></tr>
+                    <tr><td>Age</td><td>17</td></tr>
+                    <tr><td>Civil Status</td><td>Single</td></tr>
+                    <tr><td>Gender</td><td>Female</td></tr>
+                    <tr><td>Citizenship</td><td>Filipino</td></tr>
+                    <tr><td>Religion</td><td>Roman Catholic</td></tr>
+                    <tr><td>Height</td><td>4'7</td></tr>
+                    <tr><td>Weight</td><td>45 kg</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Education</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>School</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elementary</td>
+                        <td>Moncada South Central Elementary School</td>
+                        <td>2019–2020</td>
+                    </tr>
+                    <tr>
+                        <td>Junior High School</td>
+                        <td>Moncada Catholic School</td>
+                        <td>2023–2024</td>
+                    </tr>
+                    <tr>
+                        <td>Senior High School</td>
+                        <td>Rosales National High School</td>
+                        <td>2025–2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Skills</h3>
+            <ul>
+                <li>Communication Skills</li>
+                <li>Committed to excellence and success</li>
+                <li>Flexible and adaptable to new environments</li>
+            </ul>
+        </section>
+
+        <div class="btn-container">
+            <a href="homee.html" class="home-btn">Back to Home</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

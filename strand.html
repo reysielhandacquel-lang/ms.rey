@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Strands - RNHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Smooth transition for logout */
+        body { transition: opacity 0.5s ease; }
+        .fade-out { opacity: 0; }
+
+        /* Style for the clickable name in footer */
+        .footer-link {
+            color: inherit;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer-link:hover {
+            color: #800000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ROSALES NATIONAL HIGH SCHOOL</h1>
+        <p style="color: var(--gold-accent); font-style: italic;">"Quality Education for a Brighter Future"</p>
+    </header>
+
+    <nav>
+        <a href="homee.html"><i class="fas fa-home"></i> Home</a>
+        <a href="mission-vision.html"><i class="fas fa-eye"></i> Mission & Vision</a>
+        <a href="strand.html"><i class="fas fa-graduation-cap"></i> Strands</a>
+        <a href="event.html"><i class="fas fa-calendar-alt"></i> Events</a>
+        
+        <a href="contacts.html"><i class="fas fa-address-book"></i> Contacts</a>
+        
+        <a href="#" onclick="handleLogout(event)" style="color: #800000; font-weight: bold; border-left: 1px solid #eee;">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+    </nav>
+
+    <div class="content-view" style="display: block;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">SHS ACADEMIC & TVL STRANDS</h2>
+        <p style="margin-bottom: 40px; color: #666;">Discover the right path for your future career and college goals.</p>
+
+        <div class="flex">
+            <div class="card strand-card">
+                <img src="stem.jpg" alt="STEM" class="strand-logo">
+                <h4>STEM</h4>
+                <p style="font-size: 0.85rem; color: #444; text-align: left;">
+                    <b>What is STEM?</b> It is designed to prepare students who are inclined toward abstract thinking, critical analysis, and mathematical innovation. <br><br>
+                    <b>Focus:</b> Science, Technology, Engineering, and Mathematics. <br><br>
+                    <b>College Courses:</b> 
+                    Engineering (Civil, Chemical, Electrical), Medicine, Nursing, Architecture, Computer Science, Information Technology, and Pure Sciences (Biology, Physics).
+                </p>
+            </div>
+
+            <div class="card strand-card">
+                <img src="abm.jpg" alt="ABM" class="strand-logo">
+                <h4>ABM</h4>
+                <p style="font-size: 0.85rem; color: #444; text-align: left;">
+                    <b>What is ABM?</b> This strand focuses on the basic concepts of financial management, business operation, and the corporate environment. <br><br>
+                    <b>Focus:</b> Accountancy, Business, and Management. <br><br>
+                    <b>College Courses:</b> 
+                    Accountancy, Business Administration, Customs Administration, Entrepreneurship, Tourism Management, Hospitality Management, and Marketing.
+                </p>
+            </div>
+
+            <div class="card strand-card">
+                <img src="humss.jpg" alt="HUMSS" class="strand-logo">
+                <h4>HUMSS</h4>
+                <p style="font-size: 0.85rem; color: #444; text-align: left;">
+                    <b>What is HUMSS?</b> It is for students who want to explore social sciences, literature, and the complexities of human behavior and society. <br><br>
+                    <b>Focus:</b> Humanities and Social Sciences. <br><br>
+                    <b>College Courses:</b> 
+                    Teacher Education, Psychology, Political Science, Criminology, Communication Arts, Journalism, Social Work, and Philosophy.
+                </p>
+            </div>
+
+            <div class="card strand-card">
+                <img src="gas.jpg" alt="GAS" class="strand-logo">
+                <h4>GAS</h4>
+                <p style="font-size: 0.85rem; color: #444; text-align: left;">
+                    <b>What is GAS?</b> This is the most flexible strand, ideal for students who are still undecided on which professional path to take. <br><br>
+                    <b>Focus:</b> General Academic Strand. <br><br>
+                    <b>College Courses:</b> 
+                    This is a flexible strand. Students can apply for Education, Liberal Arts, and most of the courses under HUMSS or ABM depending on elective subjects taken.
+                </p>
+            </div>
+
+            <div class="card strand-card">
+                <img src="tvl.jpg" alt="TVL" class="strand-logo">
+                <h4>TVL</h4>
+                <p style="font-size: 0.85rem; color: #444; text-align: left;">
+                    <b>What is TVL?</b> It emphasizes practical, hands-on learning and provides students with technical skills and industry certifications. <br><br>
+                    <b>Focus:</b> Technical-Vocational-Livelihood. <br><br>
+                    <b>College Courses:</b> 
+                    Industrial Education, Information Technology, Hotel and Restaurant Management (HRM), or immediate employment/TESDA certification in NC II skills.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold; font-size: 1.1rem;">Rosales National High School</p>
+        <p>© 2026 All Rights Reserved | Developed By: 
+            <a href="webdevprof.html" style="color: inherit; text-decoration: none; font-weight: bold;">Mary Reysie Lhan A. Aquino</a>
+        </p>
+    </footer>
+
+    <script>
+        // LOGOUT FUNCTION
+        function handleLogout(event) {
+            event.preventDefault(); 
+            if(confirm("Are you sure you want to logout?")) {
+                document.body.classList.add('fade-out');
+                setTimeout(() => {
+                    // Correctly redirects to index.html
+                    window.location.href = 'index.html'; 
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>
